@@ -24,7 +24,6 @@ const App = () => {
     const imageCenter = imageWidth / 2;
     const isXOnCenter = locationX < imageCenter;
     const delta = isXOnCenter ? -1 : +1;
-
     const nextImageIndex = (index + delta) % images.length;
     setIndex(nextImageIndex);
   };
